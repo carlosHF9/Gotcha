@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TabSearch from "./components/tab-search";
 import TabLastPosts from "./components/tab-last-posts";
 import TabNewComplaint from "./components/tab-new-complaint";
+import TabTopComplains from "./components/tab-top-complaints/tab-top-complaints";
 
 const theme = createTheme({
   palette: {
@@ -30,7 +31,7 @@ function App() {
               <Route path="searching" element={<TabSearch />} />
               <Route path="last-posts" element={<TabLastPosts />} />
               <Route path="new-complaint" element={<TabNewComplaint />} />
-              <Route path="top-complaints" element={<h1>Search</h1>} />
+              <Route path="top-complaints" element={<TabTopComplains />} />
             </Route>
             <Route path="/" element={<Search />} />
           </Routes>
